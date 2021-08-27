@@ -18,6 +18,7 @@ $col2: #666666;
 
 
 @import "_reset.scss";
+@import "_grid.scss";
 
 
 
@@ -149,6 +150,7 @@ textarea {
   display: flex;  
   align-items: center;
   margin-right: 24px;
+  cursor: pointer;
   input[type="radio"] {
     display: none;
     + span {
