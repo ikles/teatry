@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<style>
+.m25 {
+  margin: 25px 0;
+}
+</style>
+<body>
+
+  <div class="wrapper">
+
+    <div class="contain">
+      <div class="m25">
+        <a href="#" class="btn-o">Найти</a>
+        <a href="#" class="btn">Найти</a>
+        <a href="#" class="more">Все театры</a>
+      </div>
+      <div class="m25">
+
+        <label class="form-label">
+          <span class="form-label-txt">Текст отзыва</span>
+          <textarea></textarea>
+        </label>
+
+        <label class="form-label">
+          <span class="form-label-txt">Название курса</span>
+          <input type="text" placeholder="Название курса">
+        </label>
+        <label class="form-label">
+          <span class="form-label-txt">Название курса</span>
+          <input type="text" class="input" placeholder="Название курса">
+        </label>
+
+        <div class="form-row">
+          <p>Общее впечатление</p>
+          <label class="form-label-radio">
+            <input type="radio" class="radio" name="radio1" value="Положительное">
+            <span class="form-radio-txt">Положительное</span>
+          </label>
+          <label class="form-label-radio">
+            <input type="radio" class="radio" name="radio1" value="Положительное">
+            <span class="form-radio-txt">Отрицательное</span>
+          </label>
+        </div>
+        <button class="btn">Отправить</button>
+
+      </div>
+      <div class="m25">
+
+        <div class="filter">
+          <form>
+            <div class="filter-row-w">
+              <div class="filter-row">
+                <div class="filter-col-1"><input type="text" placeholder="Название театра"></div>
+                <div class="filter-col-2"></div>
+                <div class="filter-col-3"></div>
+                <div class="filter-col-4"></div>
+                <div class="filter-col-5"></div> 
+              </div>
+              <button class="filter-btn btn">Найти</button>           
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="m25"></div>
+      <div class="m25"></div>
+      <div class="m25"></div>
+    </div>    
+
+  </div><!--wrapper-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>      
+  <script src="js/common.js"></script>
+</body>
+</html>
+
