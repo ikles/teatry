@@ -1,6 +1,7 @@
 .row0,
 .row5,
 .row10,
+.row12,
 .row15,
 .row20,
 .row25,
@@ -25,6 +26,14 @@
     padding: 0 10px; 
   }
 } 
+
+.row12 {
+  margin: 0 -12px;
+  > div {
+    padding: 0 12px; 
+  }
+} 
+
 .row15 {
   margin: 0 -15px;
   > div {
