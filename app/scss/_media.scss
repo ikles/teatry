@@ -84,6 +84,27 @@
   .cats {
     margin-bottom: -30px;
   }
+  .list-th-cols {    
+    flex-wrap: wrap;
+    .col-r {
+      margin-left: 0;
+      margin-bottom: 25px;
+      order: -1;
+      width: 100%;
+    }
+  }
+  .h1-wrap,
+  .content h1 {
+    margin-bottom: 25px;
+  }
+  .h1-wrap {
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+  input[type="text"].s-input {
+    width: 225px;
+  }
 } 
 
 /* Small Devices, Tablets */
@@ -122,19 +143,43 @@
   .foot .col-16 {
     width: 50%;
   }
-  .soc-w {
-    -webkit-justify-content: flex-start;
+  .soc-w {    
     justify-content: flex-start;
   }
+  input[type="text"].s-input {
+    width: 105px;
+  }
+  .feat-it-h {    
+    flex-direction: column;
+    .reitem-img-wrap {
+      margin-bottom: 14px;
+      max-width: 282px;
+      width: 100%;
+    }
+  }  
+
 }      
 
 @media only screen and (max-width : 640px) {
   .contain {
     max-width: 530px;
   }
+  .col-mnu {
+    order: 100;
+    margin-left: 20px;
+    flex: none;
+    width: 18px;
+  }
+  .s-fror {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+  input[type="text"].s-input {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
 
-
-.top-mnu {
+  .top-mnu {
     display: none;
     position: absolute;
     left: 0;
@@ -144,16 +189,16 @@
     width: 100%;
     padding: 10px 45px 40px 15px;
     min-height: 100px;    
-      padding-top: 30px;
-      padding-left: calc((100vw - 530px)/2);
-      li {
-        margin-bottom: 24px;
-        margin-left: 0;
-      }
-      a {
-        font-size: 20px;
-      }
-        .mega-mnu-title {
+    padding-top: 30px;
+    padding-left: calc((100vw - 530px)/2);
+    li {
+      margin-bottom: 24px;
+      margin-left: 0;
+    }
+    a {
+      font-size: 20px;
+    }
+    .mega-mnu-title {
       color: #111;
     }
     .mega-mnu-ul a {
@@ -348,12 +393,29 @@
     width: 100%;
     margin-bottom: 16px;
   }
-.footer {
-  padding-bottom: 25px;
-}
+  .footer {
+    padding-bottom: 25px;
+  }
+  .feat-it-h {       
+  width: 100%;         
+    .reitem-img-wrap {
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+  .content h1 {
+    font-size: 39px;
+  }
+  .bread-ul {
+    margin-bottom: 40px;
+  }
 }
 
-@media only screen and (max-width : 375px) {}
+@media only screen and (max-width : 375px) {
+  
+}
+
 @media only screen and (max-width : 360px) {
   body, body > * {
     width: auto;

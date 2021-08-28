@@ -324,6 +324,7 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   color: #2E2E2E;
+  flex: none;
   &:hover {
     text-decoration: none;
   }
@@ -332,7 +333,7 @@ h2 {
 .top-r {
   margin-left: auto;
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
 
 .top-mnu {
@@ -438,6 +439,7 @@ h2 {
 
 .feat-it {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .reitem-img-wrap {
@@ -511,8 +513,7 @@ h2 {
 }
 
 .reitem-txt-2 {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 16px;  
   color: rgb(102, 102, 102);
   line-height: 23px;
 }
@@ -692,8 +693,8 @@ h2 {
 
     }
     .select2-selection__rendered {      
-      font-weight: 600;
-      font-size: 15px;      
+      font-weight: 400;
+    font-size: 15px;      
       margin-right: 0;
       padding: 0;
       line-height: 1;
@@ -747,7 +748,8 @@ h2 {
   .select2-results__option {
     border: none;    
     font-size: 15px;
-    font-weight: 600;
+    color: #2E2E2E;
+    
     padding: 13px;
     background: none;
   }
@@ -755,6 +757,7 @@ h2 {
 
 .top-heart-emp {
   margin-left: 24px;
+  margin-right: 0 $i;
 }
 
 .s-form {
@@ -774,14 +777,15 @@ input[type="text"].s-input {
 }
 
 .top2 {
-  margin-bottom: 34px;
+  margin-bottom: 38px;
+  padding: 18px 0;
 }
 
 .bread-ul {
   display: flex;
   flex-wrap: wrap;
   font-size: 13px;
-  margin-bottom: 42px;  
+  margin-bottom: 54px;  
   li {
     margin-right: 6px;
     &:after {
@@ -810,23 +814,23 @@ input[type="text"].s-input {
   h1 {
     font-size: 44px;
     line-height: 1.45;
-    margin-bottom: 40px;    
+    margin-bottom: 51px;    
   }
 }
 
 .h1-wrap {
   display: flex;
   line-height: 1.45;
-  margin-bottom: 40px;
+  margin-bottom: 51px;
   h1 {
     line-height: 1;
     margin-bottom: 0;
   }
   span {
-      color: #999;
-      font-size: 14px;      
-      display: inline-block;
-    }
+    color: #999;
+    font-size: 14px;      
+    display: inline-block;
+  }
 }
 
 
@@ -845,7 +849,10 @@ input[type="text"].s-input {
 
 .feat-it-h {
   display: flex;
-  margin-bottom: 31px;
+  margin-bottom: 31px;  
+  &:last-child {
+    margin-bottom: 0;
+  }
   .reitem-txt-1 {
     margin-bottom: 10px;
   }
@@ -853,7 +860,12 @@ input[type="text"].s-input {
     width: 282px;
     flex: none;
     margin-right: 25px;
+    margin-bottom: 0;
   }
+}
+
+.feat-it-r {
+  margin-top: -4px;
 }
 
 .reitem-desc {
@@ -866,8 +878,47 @@ input[type="text"].s-input {
 .reitem-txt-22 {
   padding-left: 18px;
   background: url("../img/geo.svg") $nr left 0px top 3px;  
-          background-size: 14px;
+  background-size: 14px;
 }
+
+.r-filter {
+  background: #F9F9F9;
+  border-radius: 8px;
+  padding: 34px 24px;
+  .select2-container {
+    margin-bottom: 21px;
+    .select2-selection--single {
+      border: 1px solid #ddd; 
+      padding: 0 19px 0 16px;
+      .select2-selection__rendered {
+        color: #999;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+.r-filter-select-b + .select2-container {
+  .select2-selection--single {
+    .select2-selection__rendered {
+      color: #2E2E2E;
+    }
+  }
+}
+
+.r-filter-tit {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 17px;
+}
+
+.r-filter-btn {
+
+}
+
+
 
 @import "_media.scss";
 @import "_hides.scss";
