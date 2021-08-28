@@ -61,27 +61,33 @@
 
       </div>
       <div class="m25">
-
-        <div class="filter">
-          <form>
-            <div class="filter-row-w">
-              <div class="filter-row">
-                <div class="filter-col-1"><input type="text" placeholder="Название театра"></div>
-                <div class="filter-col-2"></div>
-                <div class="filter-col-3"></div>
-                <div class="filter-col-4"></div>
-                <div class="filter-col-5"></div> 
-              </div>
-              <button class="filter-btn btn">Найти</button>           
-            </div>
-          </form>
+        <div class="col-33">
+          @@include('var/_pubss_it.html',{
+            "img":"pubss-1.jpg",
+            "date":"21.06.2021",
+            "title":"10 интересных фактов об Анне Павловой"
+          })
         </div>
-
       </div>
       <div class="m25">
-        
+        <div class="col-33">
+          @@include('var/_feat_it.html',{
+            "img":"theatre-2.jpg",
+            "title":"Большой театр",
+            "adress":"Москва, Театральная пл., дом 1"})
+          </div>
+        </div>
+        <div class="m25">
+          <div class="col-33">
+           @@include('var/_revss_it.html',{
+            "title":"Санкт-Петербургский Молодежный театр ...",
+            "text":"Были на вечернем спектакле «Князь Игорь» 9 мая 2021г. И еле высидели до конца 1-го действия. Князь Игорь пел бездушно и не убедительно, в прочем, как и другие певцы. До сих пор не понятно, как можно «Ты моя голубка-лада» не спеть, а буквально выплюнуть».",
+            "mark":"dis.svg",
+            "name":"Татьяна",
+            "date":"12 мая 2021 г."
+          })
+        </div>
       </div>
-      <div class="m25"></div>
       <div class="m25"></div>
     </div>    
 

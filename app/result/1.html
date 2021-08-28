@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>    
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,20 +19,25 @@
 <body>
 
   <div class="wrapper">
-    <div class="top">
-      <div class="contain">
-        <div class="top-w">
-          <a href="#" class="logo">Teatry.info</a>
-          <div class="top-r">
-            <ul class="mnu-ul">
-              <li class="mnu-li"><a href="#" class="mnu-a">Театры</a></li>
-              <li class="mnu-li"><a href="#" class="mnu-a">Публикации</a></li>
-            </ul>
-            <a href="#" class="top-heart"><img src="img/heart.svg" /><span class="heart-count">11</span></a>
-          </div>
+    <header class="top">
+  <div class="contain">
+    <div class="top-w">
+      <a href="index.html" class="logo">Teatry.info</a>
+      <div class="top-r">
+       <div class="col-mnu">
+        <div class="hidden-mnu">
+          <a href="#" class="toggle-mnu"><span></span></a>
         </div>
-      </div>
+        <ul class="top-mnu">
+          <li><a href="#">Театры</a></li>
+          <li><a href="#">Публикации</a></li>
+        </ul>
+      </div>        
+      <a href="#" class="top-heart"><img src="img/heart-o.svg" /><span class="heart-count">11</span></a>
     </div>
+  </div>
+</div>
+</header>
     <div class="banner">
       <div class="contain">
         <div class="banner-w">
@@ -44,10 +50,27 @@
             <div class="filter-row-w">
               <div class="filter-row">
                 <div class="filter-col-1"><input type="text" placeholder="Название театра"></div>
-                <div class="filter-col-2"></div>
-                <div class="filter-col-3"></div>
-                <div class="filter-col-4"></div>
-                <div class="filter-col-5"></div> 
+                <div class="filter-col-2">
+                  <select class="select select-1">
+                    <option value="Тип">Тип</option>
+                    <option value="Регион">Регион</option>
+                    <option value="Город">Город</option>
+                  </select>
+                </div>
+                <div class="filter-col-3">
+                  <select class="select select-1">
+                    <option value="Тип">Тип</option>
+                    <option value="Регион">Регион</option>
+                    <option value="Город">Город</option>
+                  </select>
+                </div>
+                <div class="filter-col-4">
+                  <select class="select select-1">
+                    <option value="Регион">Регион</option>
+                    <option value="Тип">Тип</option>
+                    <option value="Город">Город</option>
+                  </select>
+                </div>                
               </div>
               <button class="filter-btn btn">Найти</button>           
             </div>
@@ -110,7 +133,7 @@
         </div>
       </div>
     </div>
-    <div class="feat">
+    <section class="section feat">
       <div class="contain">
         <div class="heading-w">
           <h2>Избранные театры</h2>
@@ -118,158 +141,162 @@
         </div>
         <div class="row12">
           <div class="col-25">
-            <div class="feat-it">
-              <div class="reitem-img-wrap">
-                <a href="#" class="reitem-img-w">
-                  <img src="img/theatre-1.jpg" class="reitem-img" />
-                </a>
-                <label class="label-like">
-                  <input type="checkbox">
-                  <span></span>
-                </label>
-              </div>
-              <a href="#" class="reitem-txt-1">Татарский государственный театр кукол «Экият»</a>
-              <div class="reitem-txt-2">Казань, Петербургская, 57</div>
-            </div>
+           <div class="feat-it">
+  <div class="reitem-img-wrap">
+    <a href="#" class="reitem-img-w">
+      <img src="img/theatre-1.jpg" class="reitem-img" />
+    </a>
+    <label class="label-like">
+      <input type="checkbox">
+      <span></span>
+    </label>
+  </div>
+  <a href="#" class="reitem-txt-1">Татарский государственный театр кукол «Экият»</a>
+  <div class="reitem-txt-2">Казань, Петербургская, 57</div>
+</div>
+          </div>
+          <div class="col-25">
+           <div class="feat-it">
+  <div class="reitem-img-wrap">
+    <a href="#" class="reitem-img-w">
+      <img src="img/theatre-2.jpg" class="reitem-img" />
+    </a>
+    <label class="label-like">
+      <input type="checkbox">
+      <span></span>
+    </label>
+  </div>
+  <a href="#" class="reitem-txt-1">Большой театр</a>
+  <div class="reitem-txt-2">Москва, Театральная пл., дом 1</div>
+</div>
           </div>
           <div class="col-25">
             <div class="feat-it">
-              <div class="reitem-img-wrap">
-                <a href="#" class="reitem-img-w">
-                  <img src="img/theatre-2.jpg" class="reitem-img" /><span class="feat"><img src="img/heart-o.svg" /></span>
-                </a>
-                <label class="label-like">
-                  <input type="checkbox">
-                  <span></span>
-                </label>
+  <div class="reitem-img-wrap">
+    <a href="#" class="reitem-img-w">
+      <img src="img/theatre-3.jpg" class="reitem-img" />
+    </a>
+    <label class="label-like">
+      <input type="checkbox">
+      <span></span>
+    </label>
+  </div>
+  <a href="#" class="reitem-txt-1">Александринский театр</a>
+  <div class="reitem-txt-2">Санкт-Петербург, наб. Реки Фонтанки, д. 65</div>
+</div>
+            </div>
+            <div class="col-25">
+              <div class="feat-it">
+  <div class="reitem-img-wrap">
+    <a href="#" class="reitem-img-w">
+      <img src="img/theatre-4.jpg" class="reitem-img" />
+    </a>
+    <label class="label-like">
+      <input type="checkbox">
+      <span></span>
+    </label>
+  </div>
+  <a href="#" class="reitem-txt-1">Казанский татарский государственный театр юного ...</a>
+  <div class="reitem-txt-2">Казань, улица Островского, 10</div>
+</div>
               </div>
-              <a href="#" class="reitem-txt-1">Большой театр</a>
-              <div class="reitem-txt-2">Москва, Театральная пл., дом 1</div>
             </div>
           </div>
-          <div class="col-25">
-            <div class="feat-it">
-              <div class="reitem-img-wrap">
-                <a href="#" class="reitem-img-w">
-                  <img src="img/theatre-3.jpg" class="reitem-img" /><span class="feat"><img src="img/heart-o.svg" /></span>
-                </a>
-                <label class="label-like">
-                  <input type="checkbox">
-                  <span></span>
-                </label>
-              </div>
-              <a href="#" class="reitem-txt-1">Александринский театр</a>
-              <div class="reitem-txt-2">Санкт-Петербург, наб. Реки Фонтанки, д. 65</div>
+        </section>
+        <section class="section revss">
+          <div class="contain">
+            <div class="heading-w"><h2>Отзывы</h2>
+              <a href="#" class="more">Все отзывы</a>
             </div>
-          </div>
-          <div class="col-25">
-            <div class="feat-it">
-              <div class="reitem-img-wrap">
-                <a href="#" class="reitem-img-w">
-                  <img src="img/theatre-4.jpg" class="reitem-img" /><span class="feat"><img src="img/heart-o.svg" /></span>
-                </a>
-                <label class="label-like">
-                  <input type="checkbox">
-                  <span></span>
-                </label>
+            <div class="row12 revss-w">
+              <div class="col-33">
+                <div class="revss-it">
+  <div class="revss-tit">Санкт-Петербургский Молодежный театр ...</div>
+  <div class="revss-txt">
+    Были на вечернем спектакле «Князь Игорь» 9 мая 2021г. И еле высидели до конца 1-го действия. Князь Игорь пел бездушно и не убедительно, в прочем, как и другие певцы. До сих пор не понятно, как можно «Ты моя голубка-лада» не спеть, а буквально выплюнуть».
+  </div>
+  <div class="revss-info">
+    <img src="img/dis.svg" />
+    <div class="revss-name">Татьяна</div>
+    <div class="revss-date">
+      12 мая 2021 г.
+    </div>
+  </div>
+</div>
               </div>
-              <a href="#" class="reitem-txt-1">Казанский татарский государственный театр юного ...</a>
-              <div class="reitem-txt-2">Казань, улица Островского, 10</div>
+              <div class="col-33">
+               <div class="revss-it">
+  <div class="revss-tit">Мариинский театр</div>
+  <div class="revss-txt">
+    Приехала специально на балет Дон Кихот на сапсане на одну ночь. Божественная Виктория Терешкина (Китри) и великолепный Кимин Ким (Базиль) в заглавных партиях. Потрясающие исполнители, красивые костюмы, динамичные партии. Классика русского балета! Три часа пролетели мгновенно! Обязательно приеду еще!
+  </div>
+  <div class="revss-info">
+    <img src="img/like.svg" />
+    <div class="revss-name">Helena S</div>
+    <div class="revss-date">
+      15 апреля 2021 г.
+    </div>
+  </div>
+</div>
             </div>
+            <div class="col-33">
+             <div class="revss-it">
+  <div class="revss-tit">Михайловский театр</div>
+  <div class="revss-txt">
+    Была на балете 'Драгоценности'. Изысканное сочетание костюмав , музыки, декорации и безукоризненное исполнение танцев! Восторг!
+  </div>
+  <div class="revss-info">
+    <img src="img/like.svg" />
+    <div class="revss-name">Анна</div>
+    <div class="revss-date">
+      15 апреля 2021 г.
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="revss">
-      <div class="contain">
-        <div class="heading-w"><h2>Отзывы</h2>
-          <a href="#" class="more">Все отзывы</a>
-        </div>
-        <div class="row12">
-          <div class="col-33">
-            <div class="revss-it">
-              <div class="revss-tit">Санкт-Петербургский Молодежный театр ...</div>
-              <div class="revss-txt">
-                Были на вечернем спектакле «Князь Игорь» 9 мая 2021г. И еле высидели до конца 1-го действия. Князь Игорь пел бездушно и не убедительно, в прочем, как и другие певцы. До сих пор не понятно, как можно «Ты моя
-                голубка-лада» не спеть, а буквально «выплюнуть».
-              </div>
-              <div class="revss-info">
-                <img src="img/dis.svg" />
-                <div class="revss-name">Татьяна</div>
-                <div class="revss-date">
-                  12 мая 2021 г.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-33">
-            <div class="revss-it">
-              <div class="revss-tit">Мариинский театр</div>
-              <div class="revss-txt">
-                Приехала специально на балет Дон Кихот на сапсане на одну ночь. Божественная Виктория Терешкина (Китри) и великолепный Кимин Ким (Базиль) в заглавных партиях. Потрясающие исполнители, красивые костюмы, динамичные
-                партии. Классика русского балета! Три часа пролетели мгновенно! Обязательно приеду еще!
-              </div>
-              <div class="revss-info">
-                <img src="img/like.svg" />
-                <div class="revss-name">Helena S</div>
-                <div class="revss-date">15 апреля 2021 г.</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-33">
-            <div class="revss-it">
-              <div class="revss-tit">Михайловский театр</div>
-              <div class="revss-txt">Была на балете "Драгоценности" . Изысканное сочетание костюмав , музыки, декорации и безукоризненное исполнение танцев! Восторг!</div>
-              <div class="revss-info">
-                <img src="img/like.svg" />
-                <div class="revss-name">Анна</div>
-                <div class="revss-date">15 апреля 2021 г.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="pubss">
+    </section>
+    <section class="section pubss">
       <div class="contain">
         <div class="heading-w"><h2>Публикации</h2>
           <a href="#" class="more">Все публикации</a>
         </div>
         <div class="row12">
           <div class="col-33">
-            <div class="pubss-it">
-              <img src="img/pubss-1.jpg" class="pubss-img" />
-              <div class="pubss-txts">
-                <div class="pubss-date">21.06.2021</div>
-                <div class="pubss-tit">Монтаж ветрогенераторов в Ставропольском крае</div>
-              </div>
-            </div>
+            <a href="#" class="pubss-it">
+  <img src="img/pubss-1.jpg" class="pubss-img" />
+  <div class="pubss-txts">
+    <div class="pubss-date">21.06.2021</div>
+    <div class="pubss-tit">10 интересных фактов об Анне Павловой</div>
+  </div>
+</a>
           </div>
           <div class="col-33">
-            <div class="pubss-it">
-              <img src="img/pubss-2.jpg" class="pubss-img" />
-              <div class="pubss-txts">
-                <div class="pubss-date">25.06.2021</div>
-                <div class="pubss-tit">Совместный проект представят Александринский театр и Французский институт в России</div>
-              </div>
-            </div>
+            <a href="#" class="pubss-it">
+  <img src="img/pubss-2.jpg" class="pubss-img" />
+  <div class="pubss-txts">
+    <div class="pubss-date">25.06.2021</div>
+    <div class="pubss-tit">Совместный проект представят Александринский театр и Французский институт в России</div>
+  </div>
+</a>
           </div>
           <div class="col-33">
-            <div class="pubss-it">
-              <img src="img/pubss-3.jpg" class="pubss-img" />
-              <div class="pubss-txts">
-                <div class="pubss-date">28.06.2021</div>
-                <div class="pubss-tit">Замена спектаклей в июне</div>
-              </div>
-            </div>
+            <a href="#" class="pubss-it">
+  <img src="img/pubss-3.jpg" class="pubss-img" />
+  <div class="pubss-txts">
+    <div class="pubss-date">28.06.2021</div>
+    <div class="pubss-tit">Замена спектаклей в июне</div>
+  </div>
+</a>            
           </div>
         </div>
       </div>
-    </div>
-    <div class="foot">
+    </section>
+     <footer class="footer foot">
       <div class="contain">
         <div class="row10">
-          <div class="col-16"><a href="#" class="logo2">Teatry.info</a></div>
+          <div class="col-16"><a href="index.html" class="logo2">Teatry.info</a></div>
           <div class="col-16">
             <ul class="foot-ul">
               <li class="foot-li"><a href="#" class="foot-a">Театры</a></li>
@@ -303,12 +330,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
-
-
   <script src="js/jquery-3.4.1.min.js"></script>      
-  <script src="js/common.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
-

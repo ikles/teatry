@@ -2,6 +2,32 @@
   .contain {
     max-width: 970px
   }    
+  .filter-row-w {    
+
+  }
+  .filter-row {
+   > div {
+     width: 25%;
+   }
+ }
+ .section,
+ .footer {
+  margin-top: 90px;
+}
+.top-heart {
+  margin-right: 20px;
+}  
+.foot {
+  padding-bottom: 45px;
+  .col-16 {
+    width: 25%;
+    margin-bottom: 35px;
+  }
+}
+.soc {
+  margin-left: 0;
+  margin-right: 16px;
+}
 }
 
 
@@ -10,6 +36,54 @@
   .contain {
     max-width: 750px 
   }    
+  .filter-row-w {    
+    flex-wrap: wrap;
+  }
+  .filter-row {
+    width: 100%;    
+    flex-wrap: wrap;
+    > div {
+      width: 50%;
+      margin-bottom: 25px;
+      &:nth-child(2n) {
+        input[type="text"], .select2-selection--single {
+          border-right: 1px solid #ddd;
+        }      
+      }      
+    }
+  }
+  .filter-col-4 {
+    flex: none;
+  }  
+  
+  .filter-btn {
+
+  }
+  .banner {
+    padding: 90px 0;
+  }
+  .feat {
+    .col-25 {
+      width: 50%;
+    }
+  }
+  .revss {
+    .col-33 {
+      width: 100%;
+    }
+  }
+  .revss-it {
+    margin-top: 25px;
+  }
+  .revss-w {
+    margin-top: -25px;
+  }
+  .section, .footer {
+    margin-top: 70px;
+  }
+  .cats {
+    margin-bottom: -30px;
+  }
 } 
 
 /* Small Devices, Tablets */
@@ -17,14 +91,174 @@
   .contain {
     max-width: 600px;
   }
+  h1,
+  .banner-w h1 {
+    font-size: 50px;
+  }
+  .banner-txt-1 {
+    font-size: 20px;
+  }
+  .filter {
+    margin-top: 59px;
+  }
+  .cats-it-w {
+    width: 40px;
+  }
+  .cats-it-txt {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+  .pubss {
+    .col-33 {
+      width: 100%;
+    }
+  }
+  .heading-w {
+    margin-bottom: 28px;
+  }
+  .foot .col-16 {
+    width: 50%;
+  }
+  .soc-w {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
 }      
 
 @media only screen and (max-width : 640px) {
   .contain {
     max-width: 530px;
   }
-} 
 
+
+.top-mnu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 59px;
+    z-index: 12;
+    background-color: #FFF; 
+    width: 100%;
+    padding: 10px 45px 40px 15px;
+    min-height: 100px;    
+      padding-top: 30px;
+      padding-left: calc((100vw - 530px)/2);
+      li {
+        margin-bottom: 24px;
+        margin-left: 0;
+      }
+      a {
+        font-size: 20px;
+      }
+        .mega-mnu-title {
+      color: #111;
+    }
+    .mega-mnu-ul a {
+      color: #999;
+      font-weight: 400;
+      &:hover {
+        color: #92ba1f;
+      }
+    }
+    .mega-mnu-butt {
+      color: #111111;
+      &:hover {
+        color: #FFF;
+      }
+    }
+    .mega-mnu-ul-big a {
+      color: #111;
+    }
+  }
+  .hidden-mnu {
+    display: block;      
+    position: relative;
+    z-index: 11;
+  }
+  .toggle-mnu {
+    display: block;
+    float: right;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 48px;
+    display: block;
+    width: 16px;
+    height: 9px;
+    margin: 0;  
+    margin-top: 7px;  
+  }
+  .toggle-mnu:focus {
+    outline: none;
+  }
+  .toggle-mnu span {
+    position: relative;
+    display: block;  
+    transition: all 0.3s;    
+    backface-visibility: hidden;
+    width: 16px;
+    height: 3px;   
+    background: #000 
+    
+  }
+  .toggle-mnu span {
+    &:after, &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -4px;
+      width: 16px;
+      height: 3px;   
+      background: #000;
+      transition: all 0.3s;    
+      backface-visibility: hidden;             
+      border-radius: 1px;
+    }
+  }
+  .toggle-mnu span:after {
+    top: 3px;     
+  }
+  .toggle-mnu span:before {
+
+  }
+
+  .toggle-mnu {      
+    span {
+      background-color: transparent;
+    }
+  }
+
+  .top-close-w {
+    display: flex;  
+    margin-top: -35px;
+    margin-bottom: 15px;
+  }
+  .top-close {
+    width: 24.5px;
+    height: 24.5px;
+    background: url("../img/top-close.svg") $nr 0 0;
+  }
+
+  .toggle-mnu.on span:before    {
+    transform: rotate(45deg) translate(5px, 5px);
+    top: -6px;
+  }
+  .toggle-mnu.on span:after    {
+    transform: rotate(-45deg) translate(8px, -9px);
+    top: 13px;
+  }
+  .toggle-mnu.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .top-heart {
+    margin-left: 20px;
+  }
+
+} 
 
 
 @media only screen and (max-width : 570px) {
@@ -34,13 +268,103 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .top-mnu {
+    padding-left: 15px;
+  }
+  .cats {
+    .row40 {
+      margin: 0 -20px;
+    }
+    .col-25 {
+      width: 50%;
+      padding: 0 20px;
+    }
+  }
+  .cats-it {
+    margin-bottom: 35px;
+  }
+  .cats {
+    margin-top: 39px;
+  }
+  .reitem-txt-1,
+  .revss-tit,
+  a.more {
+    font-size: 16px;
+  }
+  .reitem-txt-2,
+  .revss-txt,
+  .revss-name,
+  .revss-date {
+    font-size: 14px;
+  }
+  .reitem-img-wrap {
+    margin-bottom: 11px;
+  }
+  .revss-name {
+    margin: 0 15px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .filter-row > div {
+    width: 100%;
+  }
+  .filter {
+    padding: 40px 30px;
+  }
+  .filter-row input[type="text"], .filter-row .select2-container .select2-selection--single {
+    border-right: 1px solid #ddd;
+  }
+  .filter {
+    margin-top: 39px;
+  }
+  .banner-w h1 {
+    margin-bottom: 14px;
+  }
+  .banner {
+    padding: 70px 0;
+  }
+  .feat .col-25 {
+    width: 100%;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  a.more {             
+    background-size: 15px;
+    padding-right: 22px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .heading-w {    
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+    h2 {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .foot .col-16 {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+.footer {
+  padding-bottom: 25px;
+}
+}
+
+@media only screen and (max-width : 375px) {}
+@media only screen and (max-width : 360px) {
+  body, body > * {
+    width: auto;
+    min-width: 360px;
+  }
 }
 
 
-
-@media only screen and (min-width : 1080px) {
-  .main-mnu {
-    display: block !important;
+@media only screen and (min-width : 641px) {
+  .top-mnu {
+    display: flex !important;
   } 
 
   .hidden-mnu {

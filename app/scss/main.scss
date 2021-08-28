@@ -193,7 +193,7 @@ textarea {
 }
 
 .filter {
-  margin-top: 83px;
+  margin-top: 89px;
   position: relative;
   background: #FFFFFF;
   box-shadow: 0px 9px 10px rgba(173, 173, 173, 0.25);
@@ -205,27 +205,40 @@ textarea {
   display: flex;  
   align-items: center;
 }
-.filter-row {  
-  border: 1px solid #DDDDDD;
+.filter-row {   
   border-radius: 2px 0px 0px 2px;
   flex-grow: 1;
-  input[type="text"] {
-    border-right: 1px solid #DDDDDD;
+  display: flex;  
+  align-items: center;
+  input[type="text"],
+  .select2-container .select2-selection--single {
+    border: 1px solid #DDDDDD;
+    border-right: none;                
+    &:hover {
+
+    }
   }
+
+
 }
+
 
 
 .filter-col-1 {
   width: 262px;
+  flex: none;
 }
 .filter-col-2 {
   width: 228px;
+  flex: none;
 }
 .filter-col-3 {
   width: 252px;
+  flex: none;
 }
-.filter-col-4 {
-  width: 246px;
+.filter-col-4 {  
+  flex: 1 1 100%;
+  width: 100%;
 }
 
 .filter-btn {
@@ -247,8 +260,12 @@ textarea {
 
 .banner {
   position: relative;
+  padding-top: 153px;  
   padding-bottom: 140px;
-  padding-top: 137px;
+  background-size: cover;
+  background-image: url("../img/top-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
   &:before {
     position: absolute;
     top: 0;
@@ -268,8 +285,16 @@ textarea {
     text-align: center;
     font-size: 68px;
     color: rgb(255, 255, 255);
-    margin-bottom: 15px;
+    margin-bottom: 23px;
   }
+}
+
+
+.banner-txt-1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 700;
 }
 
 h2 {
@@ -299,6 +324,9 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   color: #2E2E2E;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .top-r {
@@ -307,7 +335,7 @@ h2 {
   align-items: center;
 }
 
-.mnu-ul {
+.top-mnu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -329,6 +357,7 @@ h2 {
   width: 16px;
   height: 16px;
   position: relative;
+  margin-right: 21px;
 }
 
 .heart-count {
@@ -347,22 +376,11 @@ h2 {
   color: rgb(255, 255, 255);
 }
 
-.banner {
-  background-image: url("../img/top-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
-}
 
-
-
-.banner-txt-1 {
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
 
 .cats {
-  margin-top: 65px;
+  margin-top: 59px;
+  margin-bottom: -39px;
 }
 
 
@@ -375,20 +393,23 @@ h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 49px;
+  margin-bottom: 45px;
   &:hover {
     text-decoration: none;
   }
 }
 
 .cats-it-w {
-  margin-bottom: 11px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 53px;
   height: 53px;
   flex-direction: column;
+  svg, img {
+    max-width: 100%;
+  }
 }
 
 .cats-it-txt {
@@ -397,13 +418,20 @@ h2 {
 }
 
 .feat {
-  margin-top: 146px;
+  margin-top: 152px;
+  margin-bottom: -30px;
 }
 
 .heading-w {
-  display: flex;
-  align-items: center;
+  display: flex;  
+  align-items: flex-end;
   justify-content: space-between;
+  margin-bottom: 44px;
+  line-height: 1.4;
+  h2 {
+    margin-bottom: 0;
+    line-height: 1;
+  }
 }
 
 
@@ -414,14 +442,14 @@ h2 {
 
 .reitem-img-wrap {
   position: relative;
+  margin-bottom: 14px;
 }
 
 .reitem-img-w {
   width: 100%;
   height: 182px;
   border-radius: 4px;
-  display: block;
-  margin-bottom: 14px;
+  display: block;  
   overflow: hidden;  
 }
 
@@ -490,7 +518,7 @@ h2 {
 }
 
 .revss {
-  margin-top: 146px;
+  margin-top: 156px;
 }
 
 
@@ -535,7 +563,7 @@ h2 {
 }
 
 .pubss {
-  margin-top: 146px;
+  margin-top: 158px;
   margin-bottom: -28px;
 }
 
@@ -545,6 +573,20 @@ h2 {
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 28px;
+  position: relative;
+  height: 235px;
+  display: block;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 6.24%, #000000 100%);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
 }
 
 .pubss-img {
@@ -558,11 +600,12 @@ h2 {
   bottom: 26px;
   left: 20px;
   color: rgb(255, 255, 255);
+  z-index: 2;
 }
 
 .pubss-date {
   font-size: 16px;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 }
 
 .pubss-tit {
@@ -573,7 +616,7 @@ h2 {
 
 .foot {
   background: rgb(19, 6, 32);
-  padding-top: 47px;
+  padding-top: 52px;
   padding-bottom: 90px;
   margin-top: 174px;
   color: rgb(255, 255, 255);
@@ -588,6 +631,9 @@ h2 {
   font-weight: bold;
   font-size: 24px;
   color: rgb(255, 255, 255);
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .foot-ul {
@@ -606,6 +652,9 @@ h2 {
 .soc-w {
   display: flex;
   align-items: center;
+  margin-top: 16px;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .soc {
@@ -622,6 +671,203 @@ h2 {
 }
 
 
+
+
+.select2-container { 
+  border: none; 
+  width: 100% !important;
+  .select2-selection--single {    
+    border: none;
+    padding: 0 21px;
+    display: flex;            
+    align-items: center;
+    line-height: 1;
+    height: 44px;
+    border-right: 1px solid #DDDDDD;
+    border-radius: 0;
+    &:hover {
+
+    }
+    .select2-selection__arrow {
+
+    }
+    .select2-selection__rendered {      
+      font-weight: 600;
+      font-size: 15px;      
+      margin-right: 0;
+      padding: 0;
+      line-height: 1;
+    }
+    .select2-selection__arrow {
+      width: 10px;
+      background: url("../img/arr-b-sort.svg") $nr right center;
+      position: static;
+      margin-left: auto;
+      height: 44px;
+      b {
+        display: none;
+      }
+    }
+  }  
+  .select2-dropdown {
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: none !important;
+  }
+  .select2-search--dropdown {
+    border: none;
+    background: none !important;
+    .select2-search__field {
+      border: none;
+    }
+  }
+  .select2-results {
+    border: none;
+    margin-top: 0px;
+    > .select2-results__options {
+      background-color: #FFF;
+      border: 1px solid #ddd;
+      border-top: none;
+      border-radius: 0 0 2px 2px;
+      overflow: hidden;       
+      position: relative;
+      margin-top: -1px;
+      &:before {
+        content: "";
+        width: calc(100% - 30px);
+        height: 1px;
+        margin-left: 15px;
+        display: block;
+        background-color: #ddd;
+      }
+    }
+    
+  }
+  .select2-results__option {
+    border: none;    
+    font-size: 15px;
+    font-weight: 600;
+    padding: 13px;
+    background: none;
+  }
+} 
+
+.top-heart-emp {
+  margin-left: 24px;
+}
+
+.s-form {
+  display: flex;  
+  align-items: center;
+  margin-left: 24px;
+}
+input[type="text"].s-input {
+  padding: 0 16px;
+  border-radius: 2px;
+  margin-right: -2px;
+  width: 315px;
+  flex: none;
+}
+.s-btn {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.top2 {
+  margin-bottom: 34px;
+}
+
+.bread-ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin-bottom: 42px;  
+  li {
+    margin-right: 6px;
+    &:after {
+      content: "/";
+      color: rgb(102, 102, 102);
+      font-size: 16px;
+      margin-left: 6px;
+    }    
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  a {
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+  }
+  span {
+    color: rgb(102, 102, 102);
+    font-size: 16px;  
+  }
+}
+
+.content {
+  h1 {
+    font-size: 44px;
+    line-height: 1.45;
+    margin-bottom: 40px;    
+  }
+}
+
+.h1-wrap {
+  display: flex;
+  line-height: 1.45;
+  margin-bottom: 40px;
+  h1 {
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  span {
+      color: #999;
+      font-size: 14px;      
+      display: inline-block;
+    }
+}
+
+
+
+.cols-w {
+  display: flex;
+}
+.col-l {
+  width: 100%;
+}
+.col-r {
+  flex: none;
+  width: 284px;
+  margin-left: 20px;
+}
+
+.feat-it-h {
+  display: flex;
+  margin-bottom: 31px;
+  .reitem-txt-1 {
+    margin-bottom: 10px;
+  }
+  .reitem-img-wrap {
+    width: 282px;
+    flex: none;
+    margin-right: 25px;
+  }
+}
+
+.reitem-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  color: #2E2E2E;
+}
+
+.reitem-txt-22 {
+  padding-left: 18px;
+  background: url("../img/geo.svg") $nr left 0px top 3px;  
+          background-size: 14px;
+}
 
 @import "_media.scss";
 @import "_hides.scss";
