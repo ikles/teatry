@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('var/_head.html',{
+  "title":"4. Виртуальная категория"
+})
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header2.html')
+
+    <div class="content">
+      <div class="contain">
+        <ul class="bread-ul">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Театры</a></li>
+          <li><a href="#">Оперные театры</a></li>
+          <li><span>Санкт-Петербург</span></li>
+        </ul>        
+        <div class="h1-wrap">
+          <h1>Оперные театры в г. Санкт-Петербург</h1><span>(3)</span>
+        </div>
+
+
+        <div class="cols-w list-th-cols">
+          <div class="col-l">
+
+            <div class="feats">
+             @@include('var/_feat_it_h.html',{
+              "img":"feat_it_h-1.jpg",
+              "title":"Татарский государственный театр кукол «Экият»",
+              "desc":"Один из старейших театров России, сыгравший выдающуюся роль в развитии русской национальной культуры. Открыт 14 октября 1824 года. ",
+              "adress":"Санкт-Петербург, пл. Искусств, д. 1"
+            })
+            @@include('var/_feat_it_h.html',{
+              "img":"feat_it_h-2.jpg",
+              "title":"Александринский театр",
+              "desc":"Государственный академический театр драмы им. Пушкина — легендарный Александринский театр — является старейшим национальным театром России.",
+              "adress":"Санкт-Петербург, пл. Островского, д. 6"
+            })
+            @@include('var/_feat_it_h.html',{
+              "img":"feat_it_h-3.jpg",
+              "title":"Российский государственный академический Большой драматический театр имени Г.А. Товстоногова",
+              "desc":"Осенью 1918 года в Петрограде по инициативе писателя Максима Горького, поэта Александра Блока и актрисы МХТ Марии Андреевой был основан Большой драматический театр. Репертуарную политику театра ...",
+              "adress":"Санкт-Петербург, наб. Реки Фонтанки, д. 65"
+            })            
+          </div>
+
+
+          
+
+        </div>
+        <div class="col-r">
+          <div class="rnav">
+            <div class="rnav-tit">Уточнить поиск</div>
+            <ul>
+              <li class="active"><a href="#">Виды театра</a></li>
+              <li><a href="#">Балетные</a></li>
+              <li><a class="checked" href="#">Оперные </a></li>
+              <li><a href="#">Оперетты</a></li>
+              <li><a href="#">Драматические</a></li>
+              <li><a href="#">Кукольные</a></li>
+              <li><a href="#">Пластические</a></li>
+              <li><a href="#">Экспериментальные</a></li>
+              <li><a href="#">Детские</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('var/_footer.html')
+</div>
+@@include('var/_scripts.html')
+</body>
+</html>

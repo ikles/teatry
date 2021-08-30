@@ -297,6 +297,12 @@ textarea {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 44px;
+  line-height: 1.45;
+  margin-bottom: 40px;
+}
+
 h2 {
   font-size: 36px;
   line-height: 1.4;
@@ -435,7 +441,13 @@ h2 {
   }
 }
 
-
+.s-form-w {
+  display: flex;  
+  align-items: center;
+}
+.s-open {
+  display: none;
+}
 
 .feat-it {
   width: 100%;
@@ -581,13 +593,17 @@ h2 {
     content: "";
     position: absolute;
     display: block;
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 6.24%, #000000 100%);
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 6.24%, #000000 100%);    
     border-radius: 4px;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
   }
+}
+
+.pagin-pubs-w {
+  margin-top: -23px;
 }
 
 .pubss-img {
@@ -694,7 +710,7 @@ h2 {
     }
     .select2-selection__rendered {      
       font-weight: 400;
-    font-size: 15px;      
+      font-size: 15px;      
       margin-right: 0;
       padding: 0;
       line-height: 1;
@@ -785,7 +801,7 @@ input[type="text"].s-input {
   display: flex;
   flex-wrap: wrap;
   font-size: 13px;
-  margin-bottom: 54px;  
+  margin-bottom: 45px;  
   li {
     margin-right: 6px;
     &:after {
@@ -919,6 +935,206 @@ input[type="text"].s-input {
 }
 
 
+.rnav {
+  background: rgb(249, 249, 249);
+  border-radius: 8px;
+  padding: 33px;
+  margin-top: -16px;
+  ul {
+
+  }
+
+  li {
+    margin-bottom: 20px;
+    &.active {
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+
+  a {
+    font-size: 16px;
+    color: #2E2E2E;
+    &.checked {
+      background: url("../img/cheked.svg") $nr left center;
+      padding-left: 24px;
+      color: #6400D1;
+    }
+  }
+}
+
+.rnav-tit {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+
+
+.pagin {
+  margin-top: 62px;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    &.active {
+      a {
+        color: #6400D1;
+      }
+    }
+  }
+
+  a {
+    color: rgb(46, 46, 46);
+    font-size: 16px;
+  }
+}
+
+
+.theat-desc-tit-w {
+  display: flex;
+  align-items: center;
+  h1 {
+    margin-bottom: 0;
+  }
+  .label-like {
+    position: static;
+    input[type="checkbox"] + span {
+      border: 1px solid #DDDDDD;
+      flex: none; 
+    }    
+    margin-left: 7px;
+  }
+}
+
+.theat-desc-tit-logo {
+  width: 155px;
+  height: 120px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  border: 1px solid rgb(221, 221, 221);  
+  border-radius: 4px;
+  margin-right: 21px;
+  flex: none;
+  img {
+    max-width: 100%;
+  }
+}
+
+.stheatr-cols {
+  margin-top: 30px;
+}
+
+.rnav-2 {
+  li {
+    margin-bottom: 18px;
+  }
+}
+
+.sthetre-img-w {
+  margin-bottom: 30px;
+  img {
+    margin-bottom: 12px;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #999999;
+    a {
+      color: #999999;
+    }
+  }
+}
+
+
+.article-content {
+  h2 {
+    margin-bottom: 14px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #2E2E2E;
+    margin-bottom: 19px;
+  }
+}
+
+.article-info {
+  margin-top: 5px;
+  p {
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }  
+}
+
+.article-conts {
+  margin-top: 109px;
+  table {
+    width: 100%;  
+    margin-bottom: 40px; 
+    font-size: 16px;
+    color: #666666;
+    margin-top: 20px;
+    td {
+      width: 50%;
+      line-height: 1.45;
+      padding: 7.5px 0;
+    }
+  }
+}
+.art-socs {
+  display: flex;  
+  align-items: center;
+}
+.art-soc {
+  margin-right: 13px;
+  width: 42px;
+  height: 42px;
+  background: #FFFFFF;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999999;  
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.conts-map {  
+  > img {
+    max-height: 411px;
+    width: auto;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+}
+
+.cmap-info {
+  span, a {
+    display: inline-flex;    
+    align-items: center;
+    margin-right: 28px; 
+    color: #666;   
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      margin-right: 6px;
+    }
+  }
+}
 
 @import "_media.scss";
 @import "_hides.scss";

@@ -19,7 +19,7 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-/************************************/
+  /************************************/
 
 /*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
@@ -37,12 +37,17 @@ $('.eye-3').click(function (e) {
 
 /************************************/
 
+$('.s-open').click(function () {
+  $(this).toggleClass('close');
+  $('.top-r').toggleClass('open');
+});
 
-  if($('select').length) {
-    $('select').select2({
-      minimumResultsForSearch: -1
-    });
-  }
+
+if($('select').length) {
+  $('select').select2({
+    minimumResultsForSearch: -1
+  });
+}
 
 
   //$("#phone_1").mask("+7 (999) 999-99-99");
