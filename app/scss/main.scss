@@ -1016,7 +1016,7 @@ input[type="text"].s-input {
 
 .theat-tit-like {
   display: inline-flex;  
-            align-items: center;  
+  align-items: center;  
 }
 
 .theat-desc-tit-logo {
@@ -1060,6 +1060,26 @@ input[type="text"].s-input {
     line-height: 150%;
     color: #2E2E2E;
     margin-bottom: 25px;
+  }
+  ol, ul {
+    margin-top: 12px;
+    margin-left: 20px;
+  }
+  li {
+    line-height: 1.5;
+    margin-bottom: 3px;    
+    
+    &:before {
+      margin-top: 11px;
+      margin-right: 7px;
+      content: "";
+      display: block;
+      background: #C4C4C4;
+      width: 5px;
+      height: 5px;
+      float: left;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -1144,7 +1164,7 @@ input[type="text"].s-input {
 
 .cmap-info {
   display: flex;  
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   span, a {
     display: inline-flex;    
     align-items: center;
@@ -1195,9 +1215,9 @@ input[type="text"].s-input {
   margin-top: -3px;
   h6 {
     font-weight: 600;
-font-size: 18px;
-margin-bottom: 25px;
-line-height: 1.45;
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.45;
   }
 }
 
@@ -1212,6 +1232,215 @@ line-height: 1.45;
   }
 }
 .addrev-cap {}
+
+.favorites-page {
+  margin-bottom: -30px;
+}
+
+.favorites-w {
+  margin-top: -15px;
+}
+
+.revs-cols {
+  margin-top: -14px;
+  .col-r {
+    margin-left: 48px;
+  }
+}
+
+.revs-pagin-w {
+  margin-top: 68px;
+}
+
+
+.about-cols {
+
+}
+
+.about-form-tit {
+  font-size: 32px;
+  margin-bottom: 33px;
+  line-height: 1.45;
+}
+.about-form-w {
+  background: #F9F9F9;
+  border-radius: 8px;
+  padding: 45px 34px;
+  margin-top: 93px;
+}
+
+
+.abform-area {
+  height: 188px;
+}
+
+.abform-inputs {
+  margin-bottom: 26px;
+}
+
+.about-cols {
+  margin-top: -41px;
+  .article-content {
+    p {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.abform-btn {
+  margin-top: 26px;
+  height: 42px; 
+}
+
+.tabs-cols {
+  margin-top: -13px;
+}
+
+
+
+
+
+
+
+.list-theat {
+
+}
+
+
+.list-theats-w {
+
+}
+
+.list-theat-w {
+  margin-bottom: 19px;  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.list-theat-dr {
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(46, 46, 46);
+  background: rgb(249, 249, 249);
+  border-radius: 8px;
+  height: 70px;
+  padding: 0 22px;
+  justify-content: space-between;    
+  align-items: center;
+  &:hover {
+    text-decoration: none;
+  }
+  span {
+    background-image: url("../img/arr-d.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 14px;
+    height: 14px;    
+    transition: 0.5s;
+  }
+  &.active-header {
+    span {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+
+
+.lists-theat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  padding: 25px 0 3px 0;
+  &.open-content {
+    width: 100% !important; 
+    margin-bottom: 33px;
+  }  
+}
+
+.lists-theat-ul {
+  li {
+    margin-bottom: 14px;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(46, 46, 46);
+  }
+}
+
+
+.accordion-content {
+  display: none
+}
+
+.node-cols {
+  margin-top: -30px;
+}
+
+.contents-tit {
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 19px;
+}
+.contents-w {
+  background: #F9F9F9;
+  border-radius: 4px;
+  padding: 28px 28px 11px 32px;
+  margin-bottom: 30px;
+  li {
+    
+  }
+  ol {
+    list-style: none;   
+    counter-reset: li;
+    padding-left: 0;
+    margin-top: 0;
+    li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #6400D1; 
+                   margin-bottom: 7px;     
+      a {      
+        color: #6400D1;        
+      }
+      &:before {      
+      width: auto;
+      height: auto;
+      background: none;
+      display: inline;
+        margin-top: 0;
+        float: none;
+        margin-right: 5px;
+        counter-increment: li;
+        content: counters(li, ".") ". ";
+      }
+      ol {
+        padding-left: 22px;
+        li {
+
+        } 
+      }
+    }
+  } 
+}
+
+.node-feat-w {
+  margin-top: 71px;
+  margin-bottom: 55px;
+}
+
+.node-pubs {
+  margin-top: 89px;
+  margin-bottom: -26px;
+}
+
+.node-content {
+  margin-top: -6px;
+}
 
 @import "_media.scss";
 @import "_hides.scss";

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('var/_head.html',{
+  "title":"14. Избранное"
+})
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header2.html')
+
+    <div class="content">
+      <div class="contain">
+        <ul class="bread-ul">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Театры</a></li>
+          <li><a href="#">Санкт-Петербург</a></li>
+          <li><a href="#">Оперные театры</a></li>
+          <li><span>Мариинский театр (Основная сцена)</span></li>          
+        </ul>
+        <div class="favorites-page">
+          <h1>Избранное</h1>
+          <div class="favorites-w row12">        
+            <div class="col-25">
+              @@include('var/_feat_it_ch.html',{
+              "img":"theatre-1.jpg",
+              "title":"Татарский государственный театр кукол «Экият»",
+              "adress":"Казань, Петербургская, 57"})
+            </div>
+            <div class="col-25">
+              @@include('var/_feat_it_ch.html',{
+              "img":"theatre-2.jpg",
+              "title":"Большой театр",
+              "adress":"Москва, Театральная пл., дом 1"})
+            </div>
+            <div class="col-25">
+              @@include('var/_feat_it_ch.html',{
+                "img":"theatre-3.jpg",
+                "title":"Александринский театр",
+                "adress":"Санкт-Петербург, наб. Реки Фонтанки, д. 65"})
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      @@include('var/_footer.html')
+    </div>
+    @@include('var/_scripts.html')
+  </body>
+  </html>

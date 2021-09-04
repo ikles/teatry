@@ -31,6 +31,9 @@
 .article-pubs, .article-revs, .article-others, .article-conts {
   margin-top: 58px;
 }
+.about-form-w {
+  margin-top: 50px;
+}
 }
 
 
@@ -161,6 +164,22 @@
       display: inline;
     }
   }
+  .favorites-w {
+    .col-25 {
+      width: 33.333%;
+    }
+  }
+  .about-cols {    
+    flex-wrap: wrap;
+    .col-l,
+    .col-r {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .about-cols {
+    margin-top: 20px;
+  }
 } 
 
 /* Small Devices, Tablets */
@@ -237,6 +256,22 @@
 }
 .cmap-info span, .cmap-info a {
   margin-bottom: 15px;
+}
+.favorites-w {
+  .col-25 {
+    width: 50%;
+  }
+}
+.revs-cols {    
+  flex-wrap: wrap;
+  .col-l,
+  .col-r {
+    width: 100%;
+    margin-left: 0;
+  }
+  .col-r {
+    order: -1;
+  }
 }
 }      
 
@@ -461,15 +496,25 @@
     }
   }
   .form-row {    
-            flex-wrap: wrap;
-            margin-bottom: 31px;
-            > * {
-              margin-top: 15px;
-              width: 100%;
-            } 
+    flex-wrap: wrap;
+    margin-bottom: 31px;
+    > * {
+      margin-top: 15px;
+      width: 100%;
+    } 
   }
   .article-pubs {
     margin-bottom: 0;
+  }
+  .abform-inputs {
+    margin-bottom: 0;
+    .col-33 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .about-form-w {
+    padding: 34px;
   }
 } 
 
@@ -585,9 +630,9 @@
     padding: 26px 20px;
   }
   .article-table-w {    
-        overflow-x: scroll;
-        margin-bottom: 35px;
-        padding-bottom: 17px;
+    overflow-x: scroll;
+    margin-bottom: 35px;
+    padding-bottom: 17px;
     table {
       width: 488px;
       margin-bottom: 0;      
@@ -601,6 +646,18 @@
   }
   .article-others {
     margin-bottom: 0;
+  }
+  .favorites-w {
+    .col-25 {
+      width: 100%;
+    }
+  }
+  .about-form-w {
+    padding: 20px;
+  }
+  .about-form-tit {
+    font-size: 29px;
+    margin-bottom: 11px;    
   }
 }
 

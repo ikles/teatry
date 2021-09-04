@@ -21,7 +21,7 @@ jQuery(document).ready(function( $ ) {
 
   /************************************/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -33,7 +33,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
+});
 
 /************************************/
 
@@ -64,7 +64,8 @@ $('.accordion-header').toggleClass('inactive-header');
   $('.accordion-content').first().slideDown().toggleClass('open-content');
   
   // The Accordion Effect
-  $('.accordion-header').click(function () {
+  $('.accordion-header').click(function (e) {
+    e.preventDefault();
     if($(this).is('.inactive-header')) {
       $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
       $(this).toggleClass('active-header').toggleClass('inactive-header');
