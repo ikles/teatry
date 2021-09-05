@@ -21,7 +21,7 @@ jQuery(document).ready(function( $ ) {
 
   /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -33,9 +33,51 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});
+});*/
 
 /************************************/
+
+
+
+if ($(".equip-ul.more").length) {
+
+  $(".equip-ul.more").mCustomScrollbar({
+    axis: "y",
+    theme: "dark-3",
+    mouseWheel: 1,
+    scrollInertia: '930'
+  });
+
+  $(window).resize(function() {
+    if( $(window).width() > 480 ) {
+      $(".equip-ul.more").mCustomScrollbar({
+        axis: "y",
+        theme: "dark-3",
+        mouseWheel: 1,
+        scrollInertia: '930'
+      });
+    }
+  });
+
+  if( $(window).width() < 481 ) {
+    $(".equip-ul.more").mCustomScrollbar("destroy");
+  }
+
+  $(window).resize(function() {
+    if( $(window).width() < 481 ) {
+      $(".equip-ul.more").mCustomScrollbar("destroy");
+    }
+  });
+
+}//if
+
+
+
+
+
+
+
+
 
 $('.s-open').click(function () {
   $(this).toggleClass('close');

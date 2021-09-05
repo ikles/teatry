@@ -1392,7 +1392,7 @@ input[type="text"].s-input {
   padding: 28px 28px 11px 32px;
   margin-bottom: 30px;
   li {
-    
+
   }
   ol {
     list-style: none;   
@@ -1403,15 +1403,15 @@ input[type="text"].s-input {
       font-size: 16px;
       line-height: 1.6;
       color: #6400D1; 
-                   margin-bottom: 7px;     
+      margin-bottom: 7px;     
       a {      
         color: #6400D1;        
       }
       &:before {      
-      width: auto;
-      height: auto;
-      background: none;
-      display: inline;
+        width: auto;
+        height: auto;
+        background: none;
+        display: inline;
         margin-top: 0;
         float: none;
         margin-right: 5px;
@@ -1441,6 +1441,163 @@ input[type="text"].s-input {
 .node-content {
   margin-top: -6px;
 }
+
+
+.equip-ul.more {
+  height: 216px;
+  overflow-x: auto;
+  margin-right: -25px !important;
+}
+
+.equip-ul-2 {
+  margin-bottom: 23px;
+  li {
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.equip-ul {  
+  li {
+    line-height: 1.5;
+    margin-bottom: 11px;  
+    &:last-child {
+      margin-bottom: 11px !important;
+    }
+  }
+  a {
+    color: #2E2E2E;
+  }
+  li.listcity-main {
+    font-weight: 700;
+    margin-bottom: 38px;
+    font-size: 18px;
+  }
+  li.listcity-first {  
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.listcity-page {
+  margin-bottom: -44px;
+  max-width: 1097px;
+  width: 100%;
+  margin-top: -12px;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #DADADA;
+  width: 9px;  
+  border-radius: 0;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #B1B1B1;
+  width: 9px;
+  border-radius: 0;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #B1B1B1 !important;
+  border-radius: 0;
+}
+
+.mCSB_inside>.mCSB_container {
+  margin-right: 10px;
+}
+
+.mCSB_scrollTools {
+  right: 22px;
+}
+
+.listteatre-page {
+  margin-top: -3px;
+}
+.mapsite__actions {
+  ul {
+    
+  }
+}
+.mapsite__all-link {}
+
+.mapsite__letter {
+  font-size: 24px;
+line-height: 1.45;
+margin-bottom: 5px;
+
+color: #2E2E2E;
+}
+
+.listteatre-row-w {
+  margin-bottom: 52px;  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.listteatre-row {}
+.listteatre-col {
+  ul {
+    li {
+      line-height: 1.5;
+      margin-bottom: 16px;
+      a {
+        color: #2E2E2E;
+      }
+    }
+  }
+}
+
+.all-lett {
+  display: inline-block;
+  padding-right: 27px;
+  background: url("../img/arr-v-r.svg") $nr right center;
+}
+
+.mapsite__actions {
+  display: flex;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  ul {
+    display: flex;    
+    margin-bottom: 15px;    
+            align-items: flex-start;
+    margin: 0 -7px;
+    margin-right: 24px;
+    margin-bottom: 15px;
+    li {
+      margin: 0 7px;
+      line-height: 1;    
+      font-size: 16px;        
+      a {
+        color: #666;        
+        border-bottom: 1px solid transparent;
+        &:hover {
+          color: #2E2E2E;
+          text-decoration: none;
+          border-bottom: 1px solid #2E2E2E;
+        }
+      }
+    }
+}
+}
+
+
+
+.mapsite__all-link {  
+  display: inline-block;
+  padding-bottom: 3px;  
+  color: #2E2E2E;
+  line-height: 1;
+  font-size: 16px;
+  &.active {    
+    border-bottom: 1px solid #2E2E2E;
+    text-decoration: none;
+  }
+}
+
 
 @import "_media.scss";
 @import "_hides.scss";

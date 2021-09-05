@@ -9,7 +9,8 @@
 .row35,
 .row40,
 .row45,
-.row50 {
+.row50,
+.row62 {
   display: flex;
   flex-wrap: wrap;
 }
@@ -80,6 +81,13 @@
   margin: 0 -50px;
   > div {
     padding: 0 50px; 
+  }
+}
+
+.row62 {
+  margin: 0 -62.5px;
+  > div {
+    padding: 0 62.5px; 
   }
 }
 

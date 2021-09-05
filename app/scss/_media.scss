@@ -1,3 +1,8 @@
+@media only screen and (max-width : 1200px) {
+  .contain {
+    max-width: 1170px
+  }    
+}
 @media only screen and (max-width : 1199px) {
   .contain {
     max-width: 970px
@@ -180,6 +185,24 @@
   .about-cols {
     margin-top: 20px;
   }
+  .listcity-col {
+    width: 100%;
+  }
+  .listcity-page {
+    margin-top: 30px;
+  }
+  .listteatre-col {
+    width: 100%;
+    ul {
+      margin-bottom: 16px;
+    }
+  }
+  .listteatre-row-w {
+    margin-bottom: 32px;
+  }
+  .mapsite__actions {
+    margin-bottom: 16px;
+  }
 } 
 
 /* Small Devices, Tablets */
@@ -298,7 +321,7 @@
     display: none;
     position: absolute;
     left: 0;
-    top: 59px;
+    top: 66px;
     z-index: 12;
     background-color: #FFF; 
     width: 100%;
@@ -458,10 +481,7 @@
   }
 
   .top-w {  
-    align-items: center;
-    position: relative;
-  }
-  .top-w {
+    align-items: center;      
     min-height: 46px;
   }
 
@@ -658,6 +678,9 @@
   .about-form-tit {
     font-size: 29px;
     margin-bottom: 11px;    
+  }
+  .equip-ul.more {
+    height: auto;
   }
 }
 
